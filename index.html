@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <section class="generatedPassword">
+            <div class="indicator">
+                <span class="light" id="light"></span>
+                <p><b id="strength-text">Very Strong</b></p>
+            </div>
+            <div class="passwordContainer">
+                <p id="the-password">m73sd9fklasdf@9u3!</p>
+                <div class="buttonsContainer">
+                    <button id="refresh" aria-label="Refresh">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25" fill="none">
+                            <path
+                                d="M14.167 1.50031L14.765 2.61831C15.169 3.37331 15.371 3.75131 15.237 3.91331C15.104 4.07531 14.664 3.94431 13.783 3.68331C12.8795 3.41589 11.9422 3.28015 11 3.28031C5.753 3.28031 1.5 7.40831 1.5 12.5003C1.49841 14.1236 1.93734 15.7169 2.77 17.1103M7.834 23.5003L7.236 22.3823C6.832 21.6263 6.63 21.2483 6.764 21.0873C6.897 20.9253 7.337 21.0553 8.218 21.3173C9.098 21.5783 10.033 21.7193 11.001 21.7193C16.248 21.7193 20.501 17.5913 20.501 12.4993C20.5024 10.8764 20.0635 9.28346 19.231 7.89031"
+                                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <span></span>
+                    <button id="copy">Copy</button>
+                </div>
+            </div>
+            <section class="calculations">
+                <article>
+                    <b>Entropy:</b> <span id="entropy">~ 99 Bits</span>
+                </article>
+                <article>
+                    <b>Cracking Time:</b> <span id="yt">1 Trillion Years</span>
+                </article>
+            </section>
+        </section>
+        <section class="controls">
+            <div class="slider">
+                <span id="val"><b id="value">9</b></span>
+                <input type="range" value="9" min="4" max="64" step="1">
+            </div>
+        </section>
+        <section class="characters">
+            <section>
+                <input type="checkbox" id="upc" checked>
+                <label for="upc">Upper Case</label>
+            </section>
+            <section>
+                <input type="checkbox" id="lwc" checked>
+                <label for="lwc">Lower Case</label>
+            </section>
+
+            <section>
+                <input type="checkbox" id="numbers" checked>
+                <label for="numbers">Numbers</label>
+            </section>
+            <section>
+                <input type="checkbox" id="symbols" checked>
+                <label for="symbols">Symbols</label>
+            </section>
+        </section>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
+
+</body>
+
+</html>

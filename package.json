@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@typescript/lib-dom": "npm:@types/web@0.0.199",
+    "sass": "^1.95.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
