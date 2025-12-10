@@ -1,0 +1,35 @@
+.buttonsContainer{
+    background-color: #0C7489;
+    width: 250px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 60px;
+    span{
+        height: 40px;
+        width: 3.5px;
+        background-color: white;
+    }
+    button{
+        background-color: transparent;
+        border:none;
+        font-size: 2.4rem;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        width: 48%;
+        height: 100%;
+        padding: 2rem 0.5rem;
+        svg{
+            margin-top:1.9%;
+            height: 35px;
+            width: 35px;
+        }
+        &:hover{
+            opacity: 80%;
+            transform: scale(1.1);
+        }
+    }
+}
+

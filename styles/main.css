@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  all: unset;
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  font-size: 2.4rem;
+}
+
+.buttonsContainer {
+  background-color: #0C7489;
+  width: 250px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 60px;
+}
+.buttonsContainer span {
+  height: 40px;
+  width: 3.5px;
+  background-color: white;
+}
+.buttonsContainer button {
+  background-color: transparent;
+  border: none;
+  font-size: 2.4rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 48%;
+  height: 100%;
+  padding: 2rem 0.5rem;
+}
+.buttonsContainer button svg {
+  margin-top: 1.9%;
+  height: 35px;
+  width: 35px;
+}
+.buttonsContainer button:hover {
+  opacity: 80%;
+  transform: scale(1.1);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 60%;
+}
+
+.passwordContainer {
+  background-color: #E7F5F7;
+  height: 80px;
+  border-radius: 40px;
+  position: relative;
+}
+.passwordContainer p {
+  font-size: 3.2rem;
+  font-weight: bold;
+  padding: 2rem 5rem;
+}
+.passwordContainer .buttonsContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.calculations {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  justify-self: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.generatedPassword {
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 35px;
+  position: relative;
+}
+.generatedPassword .indicator {
+  position: absolute;
+  top: -40px;
+  background-color: white;
+  padding: 0 25px;
+  left: 5%;
+  display: flex;
+  align-items: center;
+}
+.generatedPassword .indicator .light {
+  height: 30px;
+  width: 30px;
+  background-color: #0C7489;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+
+.controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.controls .slider {
+  width: 80%;
+}
+.controls .slider #val {
+  display: block;
+  text-align: center;
+}
+.controls .slider input {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.characters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 80%;
+  justify-self: center;
+}
+.characters input {
+  border-radius: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

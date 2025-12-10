@@ -1,0 +1,27 @@
+.controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  .slider {
+    width: 80%;
+    #val {
+      display: block;
+      text-align: center;
+    }
+    input {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+}
+
+.characters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 80%;
+  justify-self: center;
+  input {
+    border-radius: 30px;
+  }
+}
